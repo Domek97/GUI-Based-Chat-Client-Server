@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="715.0" prefWidth="599.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cis296_project4client.FXMLDocumentController">
+  <children>
+    <Button id="button" fx:id="sendButton" disable="true" layoutX="492.0" layoutY="638.0" onAction="#hitSend" prefWidth="56.0" text="Send" visible="false" AnchorPane.bottomAnchor="51.39999999999998" />
+    <TextField fx:id="inputBox" disable="true" layoutX="64.0" layoutY="628.0" prefHeight="42.0" prefWidth="379.0" visible="false" />
+    <TextArea fx:id="outputBox" editable="false" layoutX="14.0" layoutY="14.0" opacity="1.0" prefHeight="597.0" prefWidth="571.0" wrapText="true" />
+      <TextField fx:id="ipField" layoutX="89.0" layoutY="637.0" prefHeight="26.0" prefWidth="150.0" />
+      <TextField fx:id="portField" layoutX="299.0" layoutY="637.0" prefHeight="26.0" prefWidth="102.0" text="1226" />
+      <Label fx:id="ipLabel" layoutX="14.0" layoutY="640.0" text="IP Address" />
+      <Label fx:id="portLabel" layoutX="271.0" layoutY="641.0" text="Port" />
+      <Button fx:id="connectButton" layoutX="490.0" layoutY="638.0" mnemonicParsing="false" onAction="#hitConnect" text="Connect" />
+  </children>
+</AnchorPane>
